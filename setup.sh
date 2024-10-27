@@ -29,16 +29,16 @@
 mv ~/.bashrc ~/.bashrc-old
 
 # Copy the new .bashrc file from the repository
-cp .bashrc ~/.bashrc
+cp ~/sshBetterPrompt-main/.bashrc ~/.bashrc
 
 # Make sure the new .bashrc file is executable
 chmod 644 ~/.bashrc
 
 # Remove the sshBetterPrompt-main directory
-rm -rf sshBetterPrompt-main
+rm -rf ~/sshBetterPrompt-main
 
 # Source the new .bashrc file and start a new bash shell
-source .bashrc
+source ~/.bashrc
 
 bash
 
