@@ -23,7 +23,7 @@ export CLICOLOR=1
 # My stuff
 alias l='ls -ASh'
 alias ll="echo 'Permissions  Links  Owner  Group  Size  Date Modified  Name' && ls -AlhS"
-alias lsd="ls -lRhFXS"
+alias lsd="ls -lRhFXSA"
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias h="history | grep -i --color=always"
