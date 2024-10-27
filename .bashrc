@@ -29,9 +29,6 @@ alias diff='diff --color=auto'
 alias h="history | grep -i --color=always"
 alias c='clear'
 
-# bind "set completion-ignore-case on"
-# PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
-
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
         for rc in ~/.bashrc.d/*; do
