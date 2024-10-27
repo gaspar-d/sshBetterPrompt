@@ -29,24 +29,24 @@ This will:
 # FISH
 function sshBetterPrompt
     set pem_file $argv[1]
-    set hostname $argv[2]
-    ssh -t -i $pem_file $hostname "chmod +x setup.sh && ./setup.sh"
+    set instance_hostname $argv[2]
+    ssh -t -i $pem_file $instance_hostname "curl -L https://github.com/gaspar-d/sshBetterPrompt/archive/master.tar.gz | tar -xvz && cd sshBetterPrompt-main && chmod +x ./setup.sh && ./setup.sh"
 end
 ```
 ```bash
 # ZSH
 function sshBetterPrompt
     pem_file=$1
-    hostname=$2
-    ssh -t -i $pem_file $hostname "chmod +x setup.sh && ./setup.sh"
+    instance_hostname=$2
+    ssh -t -i $pem_file $instance_hostname "curl -L https://github.com/gaspar-d/sshBetterPrompt/archive/master.tar.gz | tar -xvz && cd sshBetterPrompt-main && chmod +x ./setup.sh && ./setup.sh"
 end
 ```
 ```bash
 # BASH
 function sshBetterPrompt
     pem_file=$1
-    hostname=$2
-    ssh -t -i $pem_file $hostname "chmod +x setup.sh && ./setup.sh"
+    instance_hostname=$2
+    ssh -t -i $pem_file $instance_hostname "curl -L https://github.com/gaspar-d/sshBetterPrompt/archive/master.tar.gz | tar -xvz && cd sshBetterPrompt-main && chmod +x ./setup.sh && ./setup.sh"
 end
 ```
 
@@ -55,6 +55,12 @@ end
 - the prompt will be changed on the server automatically
 
 These Aliases will improve the prompt experience:
+
+## Known Issues
+
+I have to return some cmd into the ssh -t call.
+using they in the script will was making the shell lose reference of the deleted folder
+and initializing the session inside the mising folder.
 
 ## update
 
