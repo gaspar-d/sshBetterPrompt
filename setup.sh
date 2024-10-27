@@ -35,7 +35,7 @@ cp .bashrc ~/.bashrc
 chmod 644 ~/.bashrc
 
 # Navigate to home directory
-cd ~ 
+cd ..
 
 # Remove the sshBetterPrompt-main directory
 rm -rf sshBetterPrompt-main
