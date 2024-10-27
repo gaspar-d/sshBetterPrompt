@@ -34,14 +34,11 @@ cp .bashrc ~/.bashrc
 # Make sure the new .bashrc file is executable
 chmod 644 ~/.bashrc
 
-# Navigate to home directory
-cd ..
-
 # Remove the sshBetterPrompt-main directory
 rm -rf sshBetterPrompt-main
 
 # Source the new .bashrc file and start a new bash shell
 source .bashrc
-echo -e "/33[34mWelcome to SSH Better Prompt!/33[0m"
 
-# bash
+bash
+
