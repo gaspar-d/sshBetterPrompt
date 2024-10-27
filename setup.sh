@@ -41,7 +41,7 @@ cd ..
 rm -rf ~/sshBetterPrompt-main
 
 # Source the new .bashrc file and start a new bash shell
-source ~/.bashrc
+# source ~/.bashrc
 
-bash
+exec bash
 
