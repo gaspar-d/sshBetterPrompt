@@ -20,7 +20,7 @@ export CLICOLOR=1
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
-# My stuff
+# Quality of life aliases
 alias l='ls -ASh'
 alias ll="echo 'Permissions  Links  Owner  Group  Size  Date Modified  Name' && ls -AlhS"
 alias lsd="ls -lRhFXSA"
@@ -29,7 +29,7 @@ alias diff='diff --color=auto'
 alias h="history | grep -i --color=always"
 alias c='clear'
 
-bind "set completion-ignore-case on"
+# bind "set completion-ignore-case on"
 PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 
 # User specific aliases and functions
