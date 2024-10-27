@@ -29,7 +29,7 @@
 mv ~/.bashrc ~/.bashrc-old
 
 # Copy the new .bashrc file from the repository
-cp bashrc ~/.bashrc
+cp .bashrc ~/.bashrc
 
 # Make sure the new .bashrc file is executable
 chmod 644 ~/.bashrc
